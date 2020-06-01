@@ -1,0 +1,16 @@
+# svn sample configuration 
+# edit your  repository/conf/svnserve.conf
+
+[general]
+
+# no anonymous access
+anon-access = none
+
+## auth users have read and write access to the repository.
+auth-access = write
+
+# set AD groupname for realm
+realm = mygroup
+
+[sasl]
+use-sasl = true
