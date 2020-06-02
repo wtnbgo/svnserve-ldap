@@ -25,7 +25,7 @@ ldap_bind_dn: usermanager@ad.example.com
 ldap_bind_pw: usermanager_password_!
 
 # search group recursive for AD
-ldap_filter: (&(objectClass=Person)(sAMAccountName=%u)(memberOf:1.2.840.113556.1.4.1941:=CN=%r,DC=wam-soft,DC=net))
+ldap_filter: (&(objectClass=Person)(sAMAccountName=%u)(memberOf:1.2.840.113556.1.4.1941:=CN=%r,DC=ad,DC=example,DC=com))
 
 # only group member (not recursive)
 #ldap_filter: (&(objectClass=Person)(sAMAccountName=%u))
